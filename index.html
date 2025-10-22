@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>you&#39;ll never reach 2.0</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Horror - Escape if you can</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Intro Screen -->
+    <div id="intro-screen" class="screen active">
+        <div class="intro-content">
+            <h1 class="haunting-text glitch" data-text="You will never reach the final level.">You will never reach the final level.</h1>
+            <p class="haunting-text-sub flicker">Do you dare to try?</p>
+            <button id="enter-maze-btn" class="btn btn--primary horror-btn">Enter the Maze</button>
+        </div>
+        <div class="blood-drip"></div>
+        <div class="fog-overlay"></div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen">
+        <div class="game-ui">
+            <div class="ui-top">
+                <div class="level-indicator">
+                    <span class="label">Level</span>
+                    <span id="current-level" class="value">1</span>
+                </div>
+                <div id="timer-container" class="timer-container hidden">
+                    <span class="label">Time</span>
+                    <span id="timer" class="timer-value heartbeat">0</span>
+                </div>
+            </div>
+            
+            <!-- Haunting Messages -->
+            <div id="haunting-message" class="haunting-message hidden"></div>
+            <div id="subliminal-flash" class="subliminal-flash hidden"></div>
+        </div>
+
+        <!-- Game Canvas -->
+        <div id="game-container" class="game-container">
+            <canvas id="game-canvas"></canvas>
+            <div id="player" class="player"></div>
+        </div>
+
+        <!-- Mobile Controls -->
+        <div id="mobile-controls" class="mobile-controls">
+            <div class="control-instructions">Touch to move</div>
+        </div>
+    </div>
+
+    <!-- Death Screen -->
+    <div id="death-screen" class="screen">
+        <div class="death-content">
+            <h2 class="death-title glitch" data-text="YOU HAVE FAILED">YOU HAVE FAILED</h2>
+            <p id="death-message" class="death-message flicker">The walls have claimed another soul...</p>
+            <div class="death-stats">
+                <div>Level Reached: <span id="death-level">1</span></div>
+                <div id="penalty-message" class="penalty-warning hidden">Death penalty: Sent back 2 levels!</div>
+            </div>
+            <button id="restart-btn" class="btn btn--primary horror-btn">Face the Maze Again</button>
+        </div>
+        <div class="blood-splash"></div>
+    </div>
+
+    <!-- Victory Screen -->
+    <div id="victory-screen" class="screen">
+        <div class="victory-content">
+            <h2 class="victory-title glitch" data-text="IMPOSSIBLE...">IMPOSSIBLE...</h2>
+            <p class="victory-message flicker">You have escaped the maze of horrors.<br>Few have achieved this feat.</p>
+            <button id="play-again-btn" class="btn btn--primary horror-btn">Enter Again</button>
+        </div>
+        <div class="victory-glow"></div>
+    </div>
+<footer id="watermark-footer" style="position:fixed; bottom:10px; left:0; width:100vw; text-align:center; pointer-events:none; z-index:10000;">
+  <span style="color: #DC143C; font-family: 'Butcherman', cursive; font-size: 1.15rem; opacity: 0.5; letter-spacing: 2px;">
+    pabitracodes
+  </span>
+</footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
