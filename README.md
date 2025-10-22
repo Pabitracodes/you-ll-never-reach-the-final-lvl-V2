@@ -2,5 +2,5 @@
 
 A Pen created on CodePen.
 
-Original URL: [https://codepen.io/Pabitracodes/pen/ByjrwQe](https://codepen.io/Pabitracodes/pen/ByjrwQe).
+Original URL: [https://codepen.io/Pabitracodes/pen/ByjrwQe](https://codepen.io/Pabitracodes/full/ByjrwQe).
 
